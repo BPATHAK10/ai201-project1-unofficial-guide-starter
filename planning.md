@@ -105,13 +105,11 @@ I made Q4 and Q5 harder on purpose. My sources don't actually agree on these. On
 
 ## AI Tool Plan
 
-I'm using Claude to help write the code. I'll give Claude the planning document as instructions, then check the output before moving on.
+I'm using Claude to help write the code. I'll give Claude pieces of this plan as instructions, then check the output before moving on.
 
-**Milestone 3 — Ingestion and chunking:**
+**Milestone 3 — Ingestion and chunking:** I'll give Claude my Documents and Chunking Strategy sections plus a couple of the actual .txt files, and ask it to write the loading, cleaning, and chunking code (500 chars, 100 overlap, split on paragraphs first). To check it, I'll print some chunks and the total count and make sure they read as complete thoughts with no empty ones.
 
+**Milestone 4 — Embedding and retrieval:** I'll give it my Retrieval Approach section and ask it to embed the chunks with `all-MiniLM-L6-v2`, store them in ChromaDB with the source name attached, and write a function that returns the top 5 chunks for a query. To check it, I'll run a few of my eval questions and look at the returned chunks and their distance scores to see if they're actually relevant.
 
-**Milestone 4 — Embedding and retrieval:**
-
-
-**Milestone 5 — Generation and interface:**
+**Milestone 5 — Generation and interface:** I'll tell Claude the answer has to come only from the retrieved chunks (and say it doesn't have enough information otherwise), and that the sources should be added by the code, not made up by the model. I'll ask for the Groq call and a simple chat interface, then read the prompt myself to confirm it really forces grounding, and test a question the documents don't cover to make sure it refuses.
 
