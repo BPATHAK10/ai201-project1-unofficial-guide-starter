@@ -9,9 +9,8 @@
 
 ## Domain
 
-<!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
-
----
+I chose the Off-campus housing experiences at UC Berkeley. Its valuable because the official channels explain dorms and the application
+process, but not the lived tradeoffs. That knowledge is available from user reviews and experiences. Questions like which co-op has a mold problem, whether Southside's noise is worth the 5-minute walk, what rent actually runs, and when you really have to sign are really hard to answer from a single source. That knowledge is scattered across student journalism, campus-life guides, and the rent board.
 
 ## Documents
 
